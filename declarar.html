@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Declaración - DeclaraOpierde</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/declarar.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                💼 DeclaraOpierde
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#como-declarar">Cómo Declarar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#ofertas">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Volver</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header bg-primary-custom text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Declaración de Impuestos</h1>
+            <p class="lead">Completa tu declaración fiscal de forma segura y sencilla</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-3">
+                    <div class="sidebar-card mb-4">
+                        <div class="sidebar-header">
+                            <h5 class="fw-bold text-primary-custom">📋 Estado de Progreso</h5>
+                        </div>
+                        <div class="progress-steps">
+                            <div class="progress-step active" data-step="1">
+                                <div class="step-circle">1</div>
+                                <span class="step-label">Datos Personales</span>
+                            </div>
+                            <div class="progress-line active"></div>
+                            <div class="progress-step" data-step="2">
+                                <div class="step-circle">2</div>
+                                <span class="step-label">Documentos</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="3">
+                                <div class="step-circle">3</div>
+                                <span class="step-label">Ingresos</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="4">
+                                <div class="step-circle">4</div>
+                                <span class="step-label">Gastos</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="5">
+                                <div class="step-circle">5</div>
+                                <span class="step-label">Revisión</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INFO BOX -->
+                    <div class="sidebar-card info-box">
+                        <div class="sidebar-header">
+                            <h5 class="fw-bold text-primary-custom">ℹ️ Información Útil</h5>
+                        </div>
+                        <ul class="info-list">
+                            <li>✓ Tiene una duración aproximada de 20 minutos</li>
+                            <li>✓ Todos tus datos están encriptados</li>
+                            <li>✓ Puedes guardar y continuar después</li>
+                            <li>✓ Asesoría disponible en línea</li>
+                        </ul>
+                    </div>
+
+                    <!-- SUPPORT BOX -->
+                    <div class="sidebar-card support-box">
+                        <div class="sidebar-header">
+                            <h5 class="fw-bold text-primary-custom">🆘 ¿Necesitas Ayuda?</h5>
+                        </div>
+                        <p class="small text-muted mb-3">Nuestros asesores están disponibles para ayudarte</p>
+                        <button class="btn btn-sm btn-success w-100">Chat en Vivo</button>
+                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2">Llamar</button>
+                    </div>
+
+                    <!-- REQUIRED DOCUMENTS -->
+                    <div class="sidebar-card documents-box">
+                        <div class="sidebar-header">
+                            <h5 class="fw-bold text-primary-custom">📄 Documentos Requeridos</h5>
+                        </div>
+                        <div class="documents-checklist">
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc1" class="form-check-input">
+                                <label for="doc1" class="form-check-label small">Identificación oficial</label>
+                            </div>
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc2" class="form-check-input">
+                                <label for="doc2" class="form-check-label small">RFC/Documento fiscal</label>
+                            </div>
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc3" class="form-check-input">
+                                <label for="doc3" class="form-check-label small">Recibos de ingresos</label>
+                            </div>
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc4" class="form-check-input">
+                                <label for="doc4" class="form-check-label small">Comprobantes de gastos</label>
+                            </div>
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc5" class="form-check-input">
+                                <label for="doc5" class="form-check-label small">Estados de cuenta</label>
+                            </div>
+                            <div class="doc-item">
+                                <input type="checkbox" id="doc6" class="form-check-input">
+                                <label for="doc6" class="form-check-label small">Certificados retenciones</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN FORM -->
+                <div class="col-lg-9">
+                    <div class="form-container">
+
+                        <!-- STEP 1: DATOS PERSONALES -->
+                        <div class="form-step active" id="step-1">
+                            <div class="step-header">
+                                <h3 class="text-primary-custom fw-bold">Paso 1: Datos Personales</h3>
+                                <p class="text-muted">Ingresa tu información personal para iniciar la declaración</p>
+                            </div>
+
+                            <form class="step-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="nombre" class="form-label fw-bold">Nombre Completo *</label>
+                                        <input type="text" class="form-control form-input" id="nombre" placeholder="Juan Carlos González" required>
+                                        <small class="text-muted">Como aparece en tu documento de identidad</small>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="apellidos" class="form-label fw-bold">Apellidos *</label>
+                                        <input type="text" class="form-control form-input" id="apellidos" placeholder="García Martínez" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="rfc" class="form-label fw-bold">RFC/Número de Identificación Fiscal *</label>
+                                        <input type="text" class="form-control form-input" id="rfc" placeholder="GOGM830515ABC" required>
+                                        <small class="text-muted">Ej: GOGM830515ABC (13 caracteres)</small>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="curp" class="form-label fw-bold">CURP/Identificación *</label>
+                                        <input type="text" class="form-control form-input" id="curp" placeholder="GOGM830515HDFGUA09" required>
+                                        <small class="text-muted">Documento de identificación oficial</small>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="email" class="form-label fw-bold">Correo Electrónico *</label>
+                                        <input type="email" class="form-control form-input" id="email" placeholder="juan@example.com" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="telefono" class="form-label fw-bold">Teléfono de Contacto *</label>
+                                        <input type="tel" class="form-control form-input" id="telefono" placeholder="+1 234 567 8900" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="fechanac" class="form-label fw-bold">Fecha de Nacimiento *</label>
+                                        <input type="date" class="form-control form-input" id="fechanac" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="estado-civil" class="form-label fw-bold">Estado Civil *</label>
+                                        <select class="form-select form-input" id="estado-civil" required>
+                                            <option value="">Selecciona tu estado civil</option>
+                                            <option value="soltero">Soltero/a</option>
+                                            <option value="casado">Casado/a</option>
+                                            <option value="divorciado">Divorciado/a</option>
+                                            <option value="viudo">Viudo/a</option>
+                                            <option value="union">Unión de Hecho</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <label for="direccion" class="form-label fw-bold">Dirección de Domicilio *</label>
+                                        <input type="text" class="form-control form-input" id="direccion" placeholder="Calle Principal 123, Apto 4B" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="ciudad" class="form-label fw-bold">Ciudad/Municipio *</label>
+                                        <input type="text" class="form-control form-input" id="ciudad" placeholder="Mexico City" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="pais" class="form-label fw-bold">País *</label>
+                                        <select class="form-select form-input" id="pais" required>
+                                            <option value="">Selecciona tu país</option>
+                                            <option value="mexico" selected>México</option>
+                                            <option value="argentina">Argentina</option>
+                                            <option value="chile">Chile</option>
+                                            <option value="colombia">Colombia</option>
+                                            <option value="españa">España</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <a href="index.html" class="btn btn-outline-secondary">Cancelar</a>
+                                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(2)">Siguiente →</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 2: DOCUMENTOS -->
+                        <div class="form-step" id="step-2">
+                            <div class="step-header">
+                                <h3 class="text-primary-custom fw-bold">Paso 2: Carga de Documentos</h3>
+                                <p class="text-muted">Sube copias escaneadas de tus documentos (formatos: PDF, JPG, PNG)</p>
+                            </div>
+
+                            <form class="step-form">
+                                <div class="document-upload">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">📄 Documentos de Identificación</h5>
+                                    
+                                    <div class="upload-area mb-4">
+                                        <div class="upload-box">
+                                            <input type="file" id="doc-id" class="form-control d-none" accept=".pdf,.jpg,.png">
+                                            <label for="doc-id" class="upload-label">
+                                                <div class="upload-icon">📋</div>
+                                                <div class="upload-text">
+                                                    <strong>Identificación Oficial (Frontal y Dorso)</strong>
+                                                    <small>Haz clic o arrastra archivos aquí</small>
+                                                </div>
+                                            </label>
+                                            <div id="doc-id-preview" class="preview-files"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="upload-area mb-4">
+                                        <div class="upload-box">
+                                            <input type="file" id="doc-rfc" class="form-control d-none" accept=".pdf,.jpg,.png">
+                                            <label for="doc-rfc" class="upload-label">
+                                                <div class="upload-icon">🏛️</div>
+                                                <div class="upload-text">
+                                                    <strong>Comprobante de RFC</strong>
+                                                    <small>Documento de registro fiscal</small>
+                                                </div>
+                                            </label>
+                                            <div id="doc-rfc-preview" class="preview-files"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="document-upload">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">💰 Documentos de Ingresos</h5>
+                                    
+                                    <div class="upload-area mb-4">
+                                        <div class="upload-box">
+                                            <input type="file" id="doc-recibos" class="form-control d-none" accept=".pdf,.jpg,.png" multiple>
+                                            <label for="doc-recibos" class="upload-label">
+                                                <div class="upload-icon">🧾</div>
+                                                <div class="upload-text">
+                                                    <strong>Recibos de Ingresos/Nómina</strong>
+                                                    <small>Puedes subir varios archivos</small>
+                                                </div>
+                                            </label>
+                                            <div id="doc-recibos-preview" class="preview-files"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="upload-area mb-4">
+                                        <div class="upload-box">
+                                            <input type="file" id="doc-certificado" class="form-control d-none" accept=".pdf,.jpg,.png">
+                                            <label for="doc-certificado" class="upload-label">
+                                                <div class="upload-icon">📜</div>
+                                                <div class="upload-text">
+                                                    <strong>Certificado de Retenciones</strong>
+                                                    <small>Documento de retenciones fiscales</small>
+                                                </div>
+                                            </label>
+                                            <div id="doc-certificado-preview" class="preview-files"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="document-upload">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">🏦 Documentos Bancarios</h5>
+                                    
+                                    <div class="upload-area mb-4">
+                                        <div class="upload-box">
+                                            <input type="file" id="doc-estados" class="form-control d-none" accept=".pdf,.jpg,.png" multiple>
+                                            <label for="doc-estados" class="upload-label">
+                                                <div class="upload-icon">💳</div>
+                                                <div class="upload-text">
+                                                    <strong>Estados de Cuenta Bancarios</strong>
+                                                    <small>Últimos 3-6 meses</small>
+                                                </div>
+                                            </label>
+                                            <div id="doc-estados-preview" class="preview-files"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(1)">← Anterior</button>
+                                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(3)">Siguiente →</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 3: INGRESOS -->
+                        <div class="form-step" id="step-3">
+                            <div class="step-header">
+                                <h3 class="text-primary-custom fw-bold">Paso 3: Declaración de Ingresos</h3>
+                                <p class="text-muted">Detalla todos tus ingresos del período fiscal</p>
+                            </div>
+
+                            <form class="step-form">
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Ingresos por Salarios/Empleo</h5>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="ingreso-salario" class="form-label fw-bold">Salario Anual Bruto *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="ingreso-salario" placeholder="0.00" step="0.01" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="empleador" class="form-label fw-bold">Nombre Empleador</label>
+                                            <input type="text" class="form-control form-input" id="empleador" placeholder="Empresa X S.A.">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Otros Ingresos</h5>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="ingreso-freelance" class="form-label fw-bold">Ingresos por Servicios Independientes</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="ingreso-freelance" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="ingreso-inversiones" class="form-label fw-bold">Ingresos por Inversiones/Intereses</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="ingreso-inversiones" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="ingreso-alquileres" class="form-label fw-bold">Ingresos por Alquileres/Propiedades</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="ingreso-alquileres" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="ingreso-otros" class="form-label fw-bold">Otros Ingresos</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="ingreso-otros" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info" role="alert">
+                                        <strong>Total Ingresos:</strong> <span id="total-ingresos">$0.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(2)">← Anterior</button>
+                                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(4)">Siguiente →</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 4: GASTOS -->
+                        <div class="form-step" id="step-4">
+                            <div class="step-header">
+                                <h3 class="text-primary-custom fw-bold">Paso 4: Gastos Deducibles</h3>
+                                <p class="text-muted">Declara tus gastos deducibles para reducir tu base imponible</p>
+                            </div>
+
+                            <form class="step-form">
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Gastos Médicos y Sanitarios</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-medico" class="form-label fw-bold">Gastos Médicos y Farmacéuticos</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-medico" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-seguros" class="form-label fw-bold">Seguros Médicos</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-seguros" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Gastos de Educación</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-educacion" class="form-label fw-bold">Matrículas y Educación</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-educacion" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-cursos" class="form-label fw-bold">Cursos y Capacitación Profesional</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-cursos" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Gastos Profesionales/Empresa</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-oficina" class="form-label fw-bold">Alquiler Oficina/Taller</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-oficina" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-suministros" class="form-label fw-bold">Suministros Oficina</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-suministros" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-utilidades" class="form-label fw-bold">Servicios (Luz, Internet, Teléfono)</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-utilidades" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-transporte" class="form-label fw-bold">Transporte Profesional</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-transporte" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="form-section">
+                                    <h5 class="fw-bold mb-4 text-primary-custom">Otros Gastos Deducibles</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-donaciones" class="form-label fw-bold">Donaciones Caritativas</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-donaciones" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="gasto-otros" class="form-label fw-bold">Otros Gastos Deducibles</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">$</span>
+                                                <input type="number" class="form-control form-input" id="gasto-otros" placeholder="0.00" step="0.01">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info" role="alert">
+                                        <strong>Total Gastos Deducibles:</strong> <span id="total-gastos">$0.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(3)">← Anterior</button>
+                                    <button type="button" class="btn btn-primary-custom" onclick="nextStep(5)">Siguiente →</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 5: REVISIÓN -->
+                        <div class="form-step" id="step-5">
+                            <div class="step-header">
+                                <h3 class="text-primary-custom fw-bold">Paso 5: Revisión y Confirmación</h3>
+                                <p class="text-muted">Verifica tu información antes de enviar</p>
+                            </div>
+
+                            <form class="step-form">
+                                <div class="alert alert-success" role="alert">
+                                    <strong>✓ Todos los datos se han validado correctamente</strong>
+                                </div>
+
+                                <div class="review-card mb-4">
+                                    <h5 class="fw-bold text-primary-custom mb-3">📋 Resumen de Declaración</h5>
+                                    <div class="review-item">
+                                        <span class="review-label">Total de Ingresos:</span>
+                                        <span class="review-value" id="review-ingresos">$0.00</span>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Total de Gastos Deducibles:</span>
+                                        <span class="review-value" id="review-gastos">$0.00</span>
+                                    </div>
+                                    <hr>
+                                    <div class="review-item highlight">
+                                        <span class="review-label">Base Imponible (Ingresos - Gastos):</span>
+                                        <span class="review-value text-success" id="review-base">$0.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="confirmacion" required>
+                                    <label class="form-check-label" for="confirmacion">
+                                        Confirmo que toda la información proporcionada es veraz y completa. Entiendo que proporcionar información falsa puede resultar en sanciones.
+                                    </label>
+                                </div>
+
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacidad" required>
+                                    <label class="form-check-label" for="privacidad">
+                                        He leído y acepto la <a href="#" class="text-primary-custom">Política de Privacidad</a> y <a href="#" class="text-primary-custom">Términos de Servicio</a>
+                                    </label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(4)">← Anterior</button>
+                                    <button type="submit" class="btn btn-success btn-lg">
+                                        ✓ Enviar Declaración
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="info-box mt-4">
+                                <p class="text-muted small">
+                                    <strong>Nota importante:</strong> Tu declaración será procesada por nuestro sistema seguro. Recibirás una confirmación por correo electrónico con tu número de trámite y podrás hacer seguimiento en cualquier momento.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mb-4">
+                    <h6 class="fw-bold text-success">Información de Seguridad</h6>
+                    <p class="text-muted small">Todos tus datos se encuentran encriptados con tecnología SSL de 256-bits. Cumplimos con estándares internacionales de privacidad y protección de datos.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h6 class="fw-bold text-success">Soporte</h6>
+                    <p class="text-muted small">📧 soporte@declaraopierde.com<br>📱 +1 234 567 8900<br>💬 Chat disponible 24/7</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted small">
+                <p>&copy; 2024 DeclaraOpierde. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/declarar.js"></script>
+</body>
+</html>
