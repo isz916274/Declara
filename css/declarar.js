@@ -244,7 +244,7 @@ function updateReviewSummary() {
 function formatCurrency(value) {
     return new Intl.NumberFormat('es-MX', {
         style: 'currency',
-        currency: 'USD'
+        currency: 'MXN'
     }).format(value);
 }
 

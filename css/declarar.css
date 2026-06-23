@@ -509,3 +509,166 @@
     border-color: var(--secondary-color);
     box-shadow: none;
 }
+
+.footer-premium {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 4rem 0 2rem 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.title-security {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.title-support {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Tarjeta SOS Adaptada a diseño claro */
+.card-sos {
+    background-color: var(--white);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.card-sos .text-sm {
+    color: var(--text-muted); /* Sobrescribe el color para texto secundario dentro de la tarjeta */
+}
+
+.sos-icon-danger {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.sos-title-text {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Botones con la nueva paleta */
+.btn-purple {
+    background-color: var(--secondary-color); /* Aplica el Verde Contable */
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-purple:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    opacity: 0.85;
+}
+
+.btn-cyan {
+    background-color: var(--accent-color); /* Aplica el Dorado/Naranja */
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-cyan:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+    opacity: 0.85;
+}
+
+.footer-divider {
+    border-color: var(--border-color);
+    opacity: 0.3;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.copyright {
+    color: var(--light-bg);
+    font-size: 0.8rem;
+}
+
+
+/* Tarjeta SOS Adaptada a diseño claro */
+.card-sos {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.card-sos .text-sm {
+    color: var(--text-muted); /* Sobrescribe el color para texto secundario dentro de la tarjeta */
+}
+
+.sos-icon-danger {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.sos-title-text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Botones con la nueva paleta */
+.btn-purple {
+    background-color: var(--secondary-color); /* Aplica el Verde Contable */
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-purple:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    opacity: 0.85;
+}
+
+.btn-cyan {
+    background-color: var(--accent-color); /* Aplica el Dorado/Naranja */
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-cyan:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+    opacity: 0.85;
+}
+
+.footer-divider {
+    border-color: var(--border-color);
+    opacity: 0.3;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.copyright {
+    color: var(--light-bg);
+    font-size: 0.8rem;
+}

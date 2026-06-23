@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Asesoría - DeclaraOpierde</title>
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/declarar.css">
+    <style>
+        .help-card {
+            min-height: 560px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            background: white;
+        }
+        .help-card .chat-header {
+            background: linear-gradient(135deg, #1b4965 0%, #164053 100%);
+            color: white;
+            padding: 20px 24px;
+        }
+        .help-card .chat-header .status {
+            width: 10px;
+            height: 10px;
+            background: #2ecc71;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 0 0 0 6px rgba(46, 204, 113, 0.12);
+        }
+        .chat-body {
+            padding: 24px;
+            background: #f7f9fb;
+            min-height: 340px;
+        }
+        .chat-message {
+            max-width: 90%;
+            background: #e9eff5;
+            border-radius: 20px;
+            padding: 18px 20px;
+            color: #2c3e50;
+            font-size: 0.98rem;
+            line-height: 1.6;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+        }
+        .chat-footer {
+            padding: 20px 24px;
+            border-top: 1px solid #e9eff5;
+            background: #ffffff;
+        }
+        .chat-input {
+            border-radius: 999px;
+            padding-right: 65px;
+        }
+        .chat-send {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            background: #27ae60;
+            color: white;
+            box-shadow: 0 10px 20px rgba(39, 174, 96, 0.25);
+        }
+        .form-card {
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            padding: 32px;
+            background: white;
+        }
+        .form-card h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+        .form-card .form-label {
+            font-weight: 700;
+            color: #1b4965;
+        }
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+        @media (max-width: 992px) {
+            .checkbox-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">💼 DeclaraOpierde</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#como-declarar">Cómo Declarar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#ofertas">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Volver</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header bg-primary-custom text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Solicitar Asesoría</h1>
+            <p class="lead">Completa el formulario y uno de nuestros asesores te contactará en breve.</p>
+        </div>
+    </section>
+
+    <main class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="form-card">
+                    <h1>Solicitud de Asesoría</h1>
+                    <p class="text-muted mb-4">Responde los datos básicos para que podemos atender tu declaración con precisión.</p>
+                    <form>
+                        <div class="mb-4">
+                            <label for="full-name" class="form-label">Nombre Completo</label>
+                            <input type="text" id="full-name" class="form-control form-input" placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="email" class="form-control form-input" placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">Teléfono de Contacto</label>
+                            <input type="tel" id="phone" class="form-control form-input" placeholder="+52 55 1234 5678">
+                        </div>
+                        <div class="mb-4">
+                            <label for="role" class="form-label">Dedicación / Cargo</label>
+                            <input type="text" id="role" class="form-control form-input" placeholder="Ej. Contador, Autónomo, Empresario">
+                        </div>
+                        <div class="mb-4">
+                            <label for="service-type" class="form-label">Tipo de Asesoría</label>
+                            <select id="service-type" class="form-select form-input">
+                                <option value="">Selecciona una opción</option>
+                                <option value="declaracion-personal">Declaración Personal</option>
+                                <option value="declaracion-empresarial">Declaración Empresarial</option>
+                                <option value="gastos-deducibles">Gastos Deducibles</option>
+                                <option value="retenciones">Retenciones y Comprobantes</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" class="form-control form-input" rows="5" placeholder="Cuéntanos tu caso o pregunta"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom btn-lg">Solicitar Asesoría</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="help-card">
+                    <div class="chat-header d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="status"></span>
+                            <strong>Asistente DeclaraOpierde</strong>
+                        </div>
+                        <button class="btn btn-sm btn-light text-dark">–</button>
+                    </div>
+                    <div class="chat-body d-flex align-items-start">
+                        <div class="chat-message">
+                            ¡Hola! Soy tu asistente de DeclaraOpierde. ¿En qué puedo ayudarte con tu declaración hoy?
+                        </div>
+                    </div>
+                    <div class="chat-footer position-relative">
+                        <input type="text" class="form-control chat-input" placeholder="Escribe tu duda...">
+                        <button class="chat-send" type="button">✈️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
